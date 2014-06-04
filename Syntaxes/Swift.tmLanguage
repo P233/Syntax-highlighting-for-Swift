@@ -33,6 +33,34 @@
 			<string>"</string>
 			<key>name</key>
 			<string>string.quoted.double.swift</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>\\\(</string>
+					<key>end</key>
+					<string>\)</string>
+					<key>name</key>
+					<string>string-interpolation</string>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.operator.swift</string>
+						</dict>
+					</dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>\+</string>
+							<key>name</key>
+							<string>keyword.operator.swift</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -50,7 +78,7 @@
 			<key>match</key>
 			<string>\b(true|false)\b</string>
 			<key>name</key>
-			<string>variable.swift</string>
+			<string>string.boolean.swift</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -68,7 +96,7 @@
 			<key>match</key>
 			<string>\w+(?=\s*:)</string>
 			<key>name</key>
-			<string>variable.swift</string>
+			<string>meta.tag.swift</string>
 		</dict>
 		<dict>
 			<key>match</key>
